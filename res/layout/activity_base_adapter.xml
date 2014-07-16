@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+    
+    <EditText 
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="Search"
+        android:drawableLeft="@android:drawable/ic_menu_search"/>
+
+    <ListView 
+        android:id="@+id/list"
+        android:layout_below="@id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+</RelativeLayout>
